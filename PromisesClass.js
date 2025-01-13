@@ -40,9 +40,9 @@ function readfile(){
     return new Promise(readfilecontents);
 }
 
-function readfilecontents(sendData){
+function readfilecontents(printContents){
     fs.readFile("textFile.txt","utf-8",function(err,contents){
-           return sendData(contents) 
+           return printContents(contents) 
     });
 }
 
